@@ -1,0 +1,90 @@
+<!doctype html>
+<html ng-app="admin">
+
+<head>
+
+    <script src="/client/js/lib/jquery/jquery.js"></script>
+    <script src="/client/js/lib/angular/angular.js"></script>
+
+    <script src="/client/js/lib/angular/angular-resource.js"></script>
+    <script src="/client/js/lib/angular/angular-route.js"></script>
+    <script src="/client/js/lib/angular/angular-animate.js"></script>
+    <script src="/client/js/lib/angular/angular-sanitize.js"></script>
+    <script src="/client/js/lib/toaster/toaster.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="/client/css/font-awesome.css" rel="stylesheet">
+    <link href="/client/css/ng-table.css" rel="stylesheet">
+    <link href="/client/css/bootstrap.css" rel="stylesheet">
+
+    <link href="/client/css/toaster.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/client/js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/client/js/lib/google-chart/ng-google-chart.js"></script>
+
+
+    <script src="/client/js/lib/ng-table/ng-table.js"></script>
+
+    <script src="/client/app.js"></script>
+    <script src="/client/factories/apiFactory.js"></script>
+    <script src="/client/factories/baseChartFactory.js"></script>
+    <script src="/client/factories/weatherChartFactory.js"></script>
+    <script src="/client/factories/weatherTimelineFactory.js"></script>
+    <script src="/client/routing.js"></script>
+
+    <script src="/client/controllers/weatherCtrl.js"></script>
+
+    <script src="/client/directives/confirmdelete.js"></script>
+    <script src="/client/constants.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
+       'version':'1','packages':['timeline']}]}"></script>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/AdminUi">Admin</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/weather">Weather</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="container main">
+
+
+        <div ng-view></div>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+var weather = angular.module('admin', ['ngRoute', 'ngTable', 'toaster', 'ngSanitize', 'googlechart']);
